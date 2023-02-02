@@ -1,0 +1,62 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Mon Jan 30 18:20:08 2023
+| Host         : adx-pc running 64-bit Ubuntu 22.04.1 LTS
+| Command      : report_drc -file bae_io_top_drc_routed.rpt -pb bae_io_top_drc_routed.pb -rpx bae_io_top_drc_routed.rpx
+| Design       : bae_io_top
+| Device       : xcvm1802-vsva2197-2MP-e-S
+| Speed File   : -2MP
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++------------+----------+-------------------+------------+
+| Rule       | Severity | Description       | Violations |
++------------+----------+-------------------+------------+
+| AVALXA-267 | Warning  | CLK_DOM_COM_NC    | 1          |
+| RTSTAT-10  | Warning  | No routable loads | 1          |
++------------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+AVALXA-267#1 Warning
+CLK_DOM_COM_NC  
+Cell axis_ila_0_i/inst/axis_mem/inst/u_trace_mem/BRAM.XPM_1.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+243 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[21],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[22],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[23],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[24],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[25],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[26],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[27],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[28],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[29],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[30],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[31],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[32],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[33],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[34],
+design_1_wrapper_i/design_1_i/axi_noc_0/inst/M00_AXI_nsu/bd_8be5_M00_AXI_nsu_0_top_INST/IF_NOC_AXI_ARADDR[35]
+ (the first 15 of 136 listed nets/buses).
+Related violations: <none>
+
+

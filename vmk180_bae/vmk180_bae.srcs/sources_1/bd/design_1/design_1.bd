@@ -1,0 +1,429 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x234D836D922D7E1B",
+      "device": "xcvm1802-vsva2197-2MP-e-S",
+      "gen_directory": "../../../../vmk180_bae.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "versal_cips_0": "",
+      "axi_noc_0": "",
+      "clk_wizard_0": "",
+      "proc_sys_reset_0": "",
+      "axi_dbg_hub_0": ""
+    },
+    "ports": {
+      "clk_o": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_wizard_0_0_clk_out1",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "99999000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "versal_cips_0": {
+        "vlnv": "xilinx.com:ip:versal_cips:3.3",
+        "xci_name": "design_1_versal_cips_0_0",
+        "xci_path": "ip/design_1_versal_cips_0_0/design_1_versal_cips_0_0.xci",
+        "inst_hier_path": "versal_cips_0",
+        "parameters": {
+          "BOOT_MODE": {
+            "value": "Custom"
+          },
+          "CLOCK_MODE": {
+            "value": "REF CLK 33.33 MHz"
+          },
+          "DDR_MEMORY_MODE": {
+            "value": "Enable"
+          },
+          "DEBUG_MODE": {
+            "value": "JTAG"
+          },
+          "DESIGN_MODE": {
+            "value": "0"
+          },
+          "DEVICE_INTEGRITY_MODE": {
+            "value": "Sysmon temperature voltage and external IO monitoring"
+          },
+          "PS_PMC_CONFIG": {
+            "value": [
+              "BOOT_MODE Custom",
+              "CLOCK_MODE {REF CLK 33.33 MHz}",
+              "DDR_MEMORY_MODE {Connectivity to DDR via NOC}",
+              "DEBUG_MODE JTAG",
+              "DESIGN_MODE 0",
+              "DEVICE_INTEGRITY_MODE {Sysmon temperature voltage and external IO monitoring}",
+              "PMC_ALT_REF_CLK_FREQMHZ 33.333",
+              "PMC_CRP_EFUSE_REF_CTRL_SRCSEL IRO_CLK/4",
+              "PMC_CRP_HSM0_REF_CTRL_FREQMHZ 33.333",
+              "PMC_CRP_HSM1_REF_CTRL_FREQMHZ 133.333",
+              "PMC_CRP_LSBUS_REF_CTRL_FREQMHZ 100",
+              "PMC_CRP_NOC_REF_CTRL_FREQMHZ 960",
+              "PMC_CRP_PL0_REF_CTRL_FREQMHZ 100",
+              "PMC_CRP_PL5_REF_CTRL_FREQMHZ 400",
+              "PMC_PL_ALT_REF_CLK_FREQMHZ 33.333",
+              "PMC_QSPI_FBCLK {{ENABLE 0} {IO {PMC_MIO 6}}}",
+              "PMC_QSPI_PERIPHERAL_ENABLE 1",
+              "PMC_SD0 {{CD_ENABLE 0} {CD_IO {PMC_MIO 24}} {POW_ENABLE 0} {POW_IO {PMC_MIO 17}} {RESET_ENABLE 0} {RESET_IO {PMC_MIO 17}} {WP_ENABLE 0} {WP_IO {PMC_MIO 25}}}",
+              "PMC_SD0_PERIPHERAL {{CLK_100_SDR_OTAP_DLY 0x00} {CLK_200_SDR_OTAP_DLY 0x00} {CLK_50_DDR_ITAP_DLY 0x00} {CLK_50_DDR_OTAP_DLY 0x00} {CLK_50_SDR_ITAP_DLY 0x2C} {CLK_50_SDR_OTAP_DLY 0x4} {ENABLE 1} {IO {PMC_MIO 13 .. 25}}}",
+              "PMC_SD0_SLOT_TYPE {SD 2.0}",
+              "PMC_SMAP_PERIPHERAL {{ENABLE 0} {IO {32 Bit}}}",
+              "PMC_USE_PMC_NOC_AXI0 1",
+              "PS_BOARD_INTERFACE Custom",
+              "PS_HSDP_EGRESS_TRAFFIC JTAG",
+              "PS_HSDP_INGRESS_TRAFFIC JTAG",
+              "PS_HSDP_MODE None",
+              "PS_NUM_FABRIC_RESETS 1",
+              "PS_USE_FPD_CCI_NOC 0",
+              "PS_USE_FPD_CCI_NOC0 0",
+              "PS_USE_NOC_LPD_AXI0 0",
+              "PS_USE_PMCPL_CLK0 1",
+              "PS_USE_PMCPL_IRO_CLK 1",
+              "SMON_ALARMS Set_Alarms_On",
+              "SMON_ENABLE_TEMP_AVERAGING 0",
+              "SMON_MEAS33 {{ALARM_ENABLE 1} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCAUX} {SUPPLY_NUM 0}}",
+              "SMON_MEAS34 {{ALARM_ENABLE 1} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCAUX_PMC} {SUPPLY_NUM 1}}",
+              "SMON_MEAS56 {{ALARM_ENABLE 1} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_PMC} {SUPPLY_NUM 2}}",
+              "SMON_MEAS57 {{ALARM_ENABLE 1} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_PSFP} {SUPPLY_NUM 3}}",
+              "SMON_MEAS58 {{ALARM_ENABLE 1} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_PSLP} {SUPPLY_NUM 4}}",
+              "SMON_MEAS60 {{ALARM_ENABLE 1} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_SOC} {SUPPLY_NUM 5}}",
+              "SMON_MEAS61 {{ALARM_ENABLE 1} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VP_VN} {SUPPLY_NUM 6}}",
+              "SMON_TEMP_AVERAGING_SAMPLES 0"
+            ]
+          }
+        },
+        "interface_ports": {
+          "PMC_NOC_AXI_0": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "address_space_ref": "PMC_NOC_AXI_0",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0x0FFFFFFFFFFF",
+              "width": "64"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "PMC_NOC_AXI_0": {
+              "range": "16E",
+              "width": "64",
+              "local_memory_map": {
+                "name": "PMC_NOC_AXI_0",
+                "description": "Address Space Segments",
+                "address_blocks": {
+                  "PMC_NOC_AXI_0:APERTURE_0": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_0",
+                    "display_name": "APERTURE_0",
+                    "base_address": "0x00000000",
+                    "range": "2G",
+                    "width": "31",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_1": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_1",
+                    "display_name": "APERTURE_1",
+                    "base_address": "0xE0000000",
+                    "range": "256M",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_2": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_2",
+                    "display_name": "APERTURE_2",
+                    "base_address": "0x000100000000",
+                    "range": "128M",
+                    "width": "33",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_3": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_3",
+                    "display_name": "APERTURE_3",
+                    "base_address": "0x000600000000",
+                    "range": "8G",
+                    "width": "35",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_4": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_4",
+                    "display_name": "APERTURE_4",
+                    "base_address": "0x000800000000",
+                    "range": "32G",
+                    "width": "36",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_5": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_5",
+                    "display_name": "APERTURE_5",
+                    "base_address": "0x004000000000",
+                    "range": "64G",
+                    "width": "39",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_6": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_6",
+                    "display_name": "APERTURE_6",
+                    "base_address": "0x005000000000",
+                    "range": "64G",
+                    "width": "39",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_7": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_7",
+                    "display_name": "APERTURE_7",
+                    "base_address": "0x006000000000",
+                    "range": "64G",
+                    "width": "39",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_8": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_8",
+                    "display_name": "APERTURE_8",
+                    "base_address": "0x007000000000",
+                    "range": "64G",
+                    "width": "39",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_9": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_9",
+                    "display_name": "APERTURE_9",
+                    "base_address": "0x008000000000",
+                    "range": "256G",
+                    "width": "40",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_10": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_10",
+                    "display_name": "APERTURE_10",
+                    "base_address": "0x00C000000000",
+                    "range": "256G",
+                    "width": "40",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_11": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_11",
+                    "display_name": "APERTURE_11",
+                    "base_address": "0x010000000000",
+                    "range": "734G",
+                    "width": "41",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_12": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_12",
+                    "display_name": "APERTURE_12",
+                    "base_address": "0x020000000000",
+                    "range": "4G",
+                    "width": "42",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_13": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_13",
+                    "display_name": "APERTURE_13",
+                    "base_address": "0x020100000000",
+                    "range": "2044G",
+                    "width": "42",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_14": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_14",
+                    "display_name": "APERTURE_14",
+                    "base_address": "0x050000000000",
+                    "range": "1T",
+                    "width": "43",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_15": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_15",
+                    "display_name": "APERTURE_15",
+                    "base_address": "0x060000000000",
+                    "range": "1T",
+                    "width": "43",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_16": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_16",
+                    "display_name": "APERTURE_16",
+                    "base_address": "0x070000000000",
+                    "range": "1T",
+                    "width": "43",
+                    "usage": "register"
+                  },
+                  "PMC_NOC_AXI_0:APERTURE_17": {
+                    "name": "PMC_NOC_AXI_0:APERTURE_17",
+                    "display_name": "APERTURE_17",
+                    "base_address": "0x080000000000",
+                    "range": "8T",
+                    "width": "44",
+                    "usage": "register"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "axi_noc_0": {
+        "vlnv": "xilinx.com:ip:axi_noc:1.0",
+        "xci_name": "design_1_axi_noc_0_0",
+        "xci_path": "ip/design_1_axi_noc_0_0/design_1_axi_noc_0_0.xci",
+        "inst_hier_path": "axi_noc_0",
+        "parameters": {
+          "MI_SIDEBAND_PINS": {
+            "value": "0"
+          },
+          "NUM_CLKS": {
+            "value": "2"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "parameters": {
+              "CATEGORY": {
+                "value": "ps_pmc"
+              },
+              "CONNECTIONS": {
+                "value": "M00_AXI {read_bw {1720} write_bw {1720} read_avg_burst {4} write_avg_burst {4}}"
+              },
+              "DEST_IDS": {
+                "value": "M00_AXI:0x0"
+              }
+            },
+            "bridges": [
+              "M00_AXI"
+            ]
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "parameters": {
+              "APERTURES": {
+                "value": "{0x201_0000_0000 1G}"
+              },
+              "CATEGORY": {
+                "value": "pl"
+              }
+            },
+            "base_address": {
+              "minimum": "0x020100000000",
+              "maximum": "0x02013FFFFFFF",
+              "width": "64"
+            }
+          }
+        }
+      },
+      "clk_wizard_0": {
+        "vlnv": "xilinx.com:ip:clk_wizard:1.0",
+        "xci_name": "design_1_clk_wizard_0_0",
+        "xci_path": "ip/design_1_clk_wizard_0_0/design_1_clk_wizard_0_0.xci",
+        "inst_hier_path": "clk_wizard_0"
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_1_proc_sys_reset_0_0",
+        "xci_path": "ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0"
+      },
+      "axi_dbg_hub_0": {
+        "vlnv": "xilinx.com:ip:axi_dbg_hub:2.0",
+        "xci_name": "design_1_axi_dbg_hub_0_0",
+        "xci_path": "ip/design_1_axi_dbg_hub_0_0/design_1_axi_dbg_hub_0_0.xci",
+        "inst_hier_path": "axi_dbg_hub_0"
+      }
+    },
+    "interface_nets": {
+      "axi_noc_0_M00_AXI": {
+        "interface_ports": [
+          "axi_dbg_hub_0/S_AXI",
+          "axi_noc_0/M00_AXI"
+        ]
+      },
+      "versal_cips_0_PMC_NOC_AXI_0": {
+        "interface_ports": [
+          "versal_cips_0/PMC_NOC_AXI_0",
+          "axi_noc_0/S00_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "clk_wizard_0_clk_out1": {
+        "ports": [
+          "clk_wizard_0/clk_out1",
+          "axi_dbg_hub_0/aclk",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "axi_noc_0/aclk1",
+          "clk_o"
+        ]
+      },
+      "proc_sys_reset_0_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "axi_dbg_hub_0/aresetn"
+        ]
+      },
+      "versal_cips_0_pl0_ref_clk": {
+        "ports": [
+          "versal_cips_0/pl0_ref_clk",
+          "clk_wizard_0/clk_in1"
+        ]
+      },
+      "versal_cips_0_pl0_resetn": {
+        "ports": [
+          "versal_cips_0/pl0_resetn",
+          "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "versal_cips_0_pmc_axi_noc_axi0_clk": {
+        "ports": [
+          "versal_cips_0/pmc_axi_noc_axi0_clk",
+          "axi_noc_0/aclk0"
+        ]
+      }
+    },
+    "addressing": {
+      "/versal_cips_0": {
+        "address_spaces": {
+          "PMC_NOC_AXI_0": {
+            "segments": {
+              "SEG_axi_dbg_hub_0_Mem0": {
+                "address_block": "/axi_dbg_hub_0/S_AXI_DBG_HUB/Mem0",
+                "offset": "0x0000020100000000",
+                "range": "2M"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

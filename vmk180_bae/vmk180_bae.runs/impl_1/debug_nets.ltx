@@ -1,0 +1,101 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "AXI_DEBUG_HUB_V1",
+                        "name": "design_1_wrapper_i/design_1_i/axi_dbg_hub_0",
+                        "spec": "axi_dbg_hub_v2_0",
+                        "ipName": "axi_dbg_hub",
+                        "address_info": {
+                            "offset": "0x20100000000",
+                            "range": "0x00200000"
+                        },
+                        "uuid": "E35FFCFC92C25C0FBC0F086B2339A775"
+                    },
+                    {
+                        "type": "AXIS_ILA_V1",
+                        "name": "axis_ila_0_i",
+                        "spec": "axis_ila_v1_2",
+                        "ipName": "axis_ila",
+                        "master": "design_1_wrapper_i/design_1_i/axi_dbg_hub_0",
+                        "uuid": "0E9B462AB5225E99BC49775A1F09F03D",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "debug_in",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "debug_in[15]"
+                                            },
+                                            {
+                                                "name": "debug_in[14]"
+                                            },
+                                            {
+                                                "name": "debug_in[13]"
+                                            },
+                                            {
+                                                "name": "debug_in[12]"
+                                            },
+                                            {
+                                                "name": "debug_in[11]"
+                                            },
+                                            {
+                                                "name": "debug_in[10]"
+                                            },
+                                            {
+                                                "name": "debug_in[9]"
+                                            },
+                                            {
+                                                "name": "debug_in[8]"
+                                            },
+                                            {
+                                                "name": "debug_in[7]"
+                                            },
+                                            {
+                                                "name": "debug_in[6]"
+                                            },
+                                            {
+                                                "name": "debug_in[5]"
+                                            },
+                                            {
+                                                "name": "debug_in[4]"
+                                            },
+                                            {
+                                                "name": "debug_in[3]"
+                                            },
+                                            {
+                                                "name": "debug_in[2]"
+                                            },
+                                            {
+                                                "name": "debug_in[1]"
+                                            },
+                                            {
+                                                "name": "debug_in[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,60 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_70da": {
+			"proto_instances": {
+				"/pspmc_0/PMC_NOC_AXI_0": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "pmc_axi_noc_axi0_clk"},
+						"ARADDR": { "actual": "pmc_noc_axi0_araddr"},
+						"ARBURST": { "actual": "pmc_noc_axi0_arburst"},
+						"ARCACHE": { "actual": "pmc_noc_axi0_arcache"},
+						"ARID": { "actual": "pmc_noc_axi0_arid"},
+						"ARLEN": { "actual": "pmc_noc_axi0_arlen"},
+						"ARLOCK": { "actual": "pmc_noc_axi0_arlock"},
+						"ARPROT": { "actual": "pmc_noc_axi0_arprot"},
+						"ARQOS": { "actual": "pmc_noc_axi0_arqos"},
+						"ARREADY": { "actual": "pmc_noc_axi0_arready"},
+						"ARREGION": { "actual": "pmc_noc_axi0_arregion"},
+						"ARSIZE": { "actual": "pmc_noc_axi0_arsize"},
+						"ARUSER": { "actual": "pmc_noc_axi0_aruser"},
+						"ARVALID": { "actual": "pmc_noc_axi0_arvalid"},
+						"AWADDR": { "actual": "pmc_noc_axi0_awaddr"},
+						"AWBURST": { "actual": "pmc_noc_axi0_awburst"},
+						"AWCACHE": { "actual": "pmc_noc_axi0_awcache"},
+						"AWID": { "actual": "pmc_noc_axi0_awid"},
+						"AWLEN": { "actual": "pmc_noc_axi0_awlen"},
+						"AWLOCK": { "actual": "pmc_noc_axi0_awlock"},
+						"AWPROT": { "actual": "pmc_noc_axi0_awprot"},
+						"AWQOS": { "actual": "pmc_noc_axi0_awqos"},
+						"AWREADY": { "actual": "pmc_noc_axi0_awready"},
+						"AWREGION": { "actual": "pmc_noc_axi0_awregion"},
+						"AWSIZE": { "actual": "pmc_noc_axi0_awsize"},
+						"AWUSER": { "actual": "pmc_noc_axi0_awuser"},
+						"AWVALID": { "actual": "pmc_noc_axi0_awvalid"},
+						"BID": { "actual": "pmc_noc_axi0_bid"},
+						"BREADY": { "actual": "pmc_noc_axi0_bready"},
+						"BRESP": { "actual": "pmc_noc_axi0_bresp"},
+						"BUSER": { "actual": "pmc_noc_axi0_buser"},
+						"BVALID": { "actual": "pmc_noc_axi0_bvalid"},
+						"RDATA": { "actual": "pmc_noc_axi0_rdata"},
+						"RID": { "actual": "pmc_noc_axi0_rid"},
+						"RLAST": { "actual": "pmc_noc_axi0_rlast"},
+						"RREADY": { "actual": "pmc_noc_axi0_rready"},
+						"RRESP": { "actual": "pmc_noc_axi0_rresp"},
+						"RUSER": { "actual": "pmc_noc_axi0_ruser"},
+						"RVALID": { "actual": "pmc_noc_axi0_rvalid"},
+						"WDATA": { "actual": "pmc_noc_axi0_wdata"},
+						"WID": { "actual": "pmc_noc_axi0_wid"},
+						"WLAST": { "actual": "pmc_noc_axi0_wlast"},
+						"WREADY": { "actual": "pmc_noc_axi0_wready"},
+						"WSTRB": { "actual": "pmc_noc_axi0_wstrb"},
+						"WUSER": { "actual": "pmc_noc_axi0_wuser"},
+						"WVALID": { "actual": "pmc_noc_axi0_wvalid"}
+					}
+				}
+			}
+		}
+	}
+}
