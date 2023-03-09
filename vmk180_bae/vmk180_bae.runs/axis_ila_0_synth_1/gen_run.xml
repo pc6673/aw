@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="axis_ila_0_synth_1" LaunchPart="xcvm1802-vsva2197-2MP-e-S" LaunchTime="1674780175">
-  <File Type="RDS-DCP" Name="axis_ila_0.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="axis_ila_0_utilization_synth.pb"/>
   <File Type="PA-TCL" Name="axis_ila_0.tcl"/>
-  <File Type="RDS-UTIL" Name="axis_ila_0_utilization_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="axis_ila_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="axis_ila_0.vds"/>
+  <File Type="RDS-UTIL" Name="axis_ila_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="axis_ila_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="axis_ila_0.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axis_ila_0">
     <File Path="$PSRCDIR/sources_1/ip/axis_ila_0/axis_ila_0.xci">
       <FileInfo>

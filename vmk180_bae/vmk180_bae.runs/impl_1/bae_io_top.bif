@@ -11,13 +11,13 @@ new_bif:
   {
    id = 0x01
    type = bootloader
-   file = gen_files/plm.elf
+   file = gen_files\plm.elf
   }
   partition
   {
    id = 0x09
    type = pmcdata, load = 0xf2000000
-   file = gen_files/pmc_data.cdo
+   file = gen_files\pmc_data.cdo
   }
  }
  image
@@ -28,13 +28,13 @@ new_bif:
   {
    id = 0x0C
    type = cdo
-   file = gen_files/lpd_data.cdo
+   file = gen_files\lpd_data.cdo
   }
   partition
   {
    id = 0x0B
    core = psm
-   file = static_files/psm_fw.elf
+   file = static_files\psm_fw.elf
   }
  }
  image
@@ -62,7 +62,7 @@ new_bif:
   {
    id = 0x08
    type = cdo
-   file = gen_files/fpd_data.cdo
+   file = gen_files\fpd_data.cdo
   }
  }
 }

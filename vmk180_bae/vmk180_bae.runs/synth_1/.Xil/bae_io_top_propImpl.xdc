@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/constrs_2/new/bae_io.xdc rfile:../../../vmk180_bae.srcs/constrs_2/new/bae_io.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/constrs_2/new/bae_io.xdc rfile:../../../vmk180_bae.srcs/constrs_2/new/bae_io.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN H18 [get_ports {counter[7]}]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

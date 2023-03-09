@@ -1,0 +1,9 @@
+tri_mode_ethernet_mac_0_block_sync_block.vhd,vhdl,xil_defaultlib,../../../../tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/common/tri_mode_ethernet_mac_0_block_sync_block.vhd,
+tri_mode_ethernet_mac_0_syncer_level.vhd,vhdl,xil_defaultlib,../../../../tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/example_design/common/tri_mode_ethernet_mac_0_syncer_level.vhd,
+tri_mode_ethernet_mac_0_axi4_lite_ipif_wrapper.vhd,vhdl,xil_defaultlib,../../../../tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_axi4_lite_ipif_wrapper.vhd,
+tri_mode_ethernet_mac_0_gmii_if.vhd,vhdl,xil_defaultlib,../../../../tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/physical/tri_mode_ethernet_mac_0_gmii_if.vhd,
+tri_mode_ethernet_mac_0_tx_clk_gen.vhd,vhdl,xil_defaultlib,../../../../tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_tx_clk_gen.vhd,
+tri_mode_ethernet_mac_0_vector_decode.vhd,vhdl,xil_defaultlib,../../../../tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/statistics/tri_mode_ethernet_mac_0_vector_decode.vhd,
+tri_mode_ethernet_mac_0_block.vhd,vhdl,xil_defaultlib,../../../../tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_block.vhd,
+tri_mode_ethernet_mac_0.vhd,vhdl,xil_defaultlib,../../../../tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

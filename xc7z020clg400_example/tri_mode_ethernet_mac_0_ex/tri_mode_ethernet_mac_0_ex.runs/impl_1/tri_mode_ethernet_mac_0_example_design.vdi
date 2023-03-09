@@ -1,0 +1,354 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Mar  9 12:58:31 2023
+# Process ID: 15608
+# Current directory: C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.runs/impl_1
+# Command line: vivado.exe -log tri_mode_ethernet_mac_0_example_design.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source tri_mode_ethernet_mac_0_example_design.tcl -notrace
+# Log file: C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.runs/impl_1/tri_mode_ethernet_mac_0_example_design.vdi
+# Journal file: C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.runs/impl_1\vivado.jou
+# Running On: AUCHL02NB162062, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 4, Host memory: 68384 MB
+#-----------------------------------------------------------
+source tri_mode_ethernet_mac_0_example_design.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1002.219 ; gain = 118.629
+Command: link_design -top tri_mode_ethernet_mac_0_example_design -part xc7z020clg400-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/tri_mode_ethernet_mac_0.dcp' for cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1473.211 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 292 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_tx_clk_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_tx_en_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_tx_er_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/mdc_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/obuf_data[0].gmii_txd_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/obuf_data[1].gmii_txd_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/obuf_data[2].gmii_txd_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/obuf_data[3].gmii_txd_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/obuf_data[4].gmii_txd_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/obuf_data[5].gmii_txd_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/obuf_data[6].gmii_txd_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/obuf_data[7].gmii_txd_obuf_i 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_tx_clk' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_tx_clk' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_tx_en' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_tx_en' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_tx_er' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_tx_er' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[1]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[1]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[2]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[2]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[3]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[3]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[4]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[4]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[5]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[5]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[6]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[6]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[7]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/gmii_txd[7]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/mdc' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/mdc' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0'
+Finished Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0'
+Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc] for cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc:45]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc:46]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc] for cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0'
+Parsing XDC File [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:96]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:96]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2181.195 ; gain = 583.453
+WARNING: [Vivado 12-584] No ports matched 'pause_req*'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:102]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports pause_req*]'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:102]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'phy_resetn'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:114]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports phy_resetn]'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:114]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ tx_stats_reg[*]}'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:123]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ tx_stats_shift_reg[*]}'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:123]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_cells -hier -filter {name =~ tx_stats_reg[*]}]'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:123]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'gen_tx_data'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'pause_req_*'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'config_board'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:167]
+WARNING: [Vivado 12-508] No pins matched 'enable_phy_loopback_reg/CE'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:167]
+WARNING: [Vivado 12-508] No pins matched 'config_vector_controller/tx_speed_reg[1]/C'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'mac_speed[*]'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:170]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ */axi_pat_gen_inst/add_credit_reg*}'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:170]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter {name =~ */axi_pat_gen_inst/add_credit_reg*}] -filter {name =~ *D}'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:170]
+WARNING: [Vivado 12-508] No pins matched 'config_vector_controller/tx_speed_reg[*]/D'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'chk_tx_data'. [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc:171]
+Finished Parsing XDC File [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_example_design.xdc]
+Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc] for cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0' of design 'design_1' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:47]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0' of design 'design_1' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:48]
+CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '10' objects of types '(pin)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:51]
+CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:51]
+CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '10' objects of types '(pin)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:52]
+CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:52]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0' of design 'design_1' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:62]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0' of design 'design_1' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:63]
+WARNING: [Constraints 18-401] set_false_path: 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/mdc' is not a valid endpoint. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:77]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+CRITICAL WARNING: [Constraints 18-512] set_false_path: list of objects specified for '-to' option contains no valid endpoints. Please check to make sure at least one valid endpoint is specified. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:77]
+Finished Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.gen/sources_1/ip/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc] for cell 'trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0'
+Parsing XDC File [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_user_phytiming.xdc]
+Finished Parsing XDC File [C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/imports/tri_mode_ethernet_mac_0_user_phytiming.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_txd_obuf_reg[7] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_tx_en_obuf_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_tx_er_obuf_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_txd_obuf_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_txd_obuf_reg[1] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_txd_obuf_reg[2] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_txd_obuf_reg[3] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_txd_obuf_reg[4] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_txd_obuf_reg[5] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_txd_obuf_reg[6] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2181.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 179 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 178 instances
+
+14 Infos, 61 Warnings, 10 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2181.195 ; gain = 1137.848
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2181.195 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: afc3ce4f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.272 . Memory (MB): peak = 2181.195 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/sync_stats_reset/async_rst0_i_1 into driver instance example_resets/tri_mode_ethernet_mac_i_i_1, which resulted in an inversion of 1 pins
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 25ad640e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.366 . Memory (MB): peak = 2485.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 7 cells and removed 591 cells
+INFO: [Opt 31-1021] In phase Retarget, 4 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: f90e541a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.419 . Memory (MB): peak = 2485.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 12 cells and removed 40 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1d5f5d73
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.551 . Memory (MB): peak = 2485.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 309 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 7e0c4963
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.647 . Memory (MB): peak = 2485.602 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 7e0c4963
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.664 . Memory (MB): peak = 2485.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 3d7fa5d2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.688 . Memory (MB): peak = 2485.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               7  |             591  |                                              4  |
+|  Constant propagation         |              12  |              40  |                                              0  |
+|  Sweep                        |               0  |             309  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2485.602 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: cddb21a6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.847 . Memory (MB): peak = 2485.602 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: cddb21a6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2617.172 ; gain = 0.000
+Ending Power Optimization Task | Checksum: cddb21a6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2617.172 ; gain = 131.570
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: cddb21a6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2617.172 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2617.172 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: cddb21a6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2617.172 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 61 Warnings, 10 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2617.172 ; gain = 435.977
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2617.172 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.runs/impl_1/tri_mode_ethernet_mac_0_example_design_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file tri_mode_ethernet_mac_0_example_design_drc_opted.rpt -pb tri_mode_ethernet_mac_0_example_design_drc_opted.pb -rpx tri_mode_ethernet_mac_0_example_design_drc_opted.rpx
+Command: report_drc -file tri_mode_ethernet_mac_0_example_design_drc_opted.rpt -pb tri_mode_ethernet_mac_0_example_design_drc_opted.pb -rpx tri_mode_ethernet_mac_0_example_design_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/tri_mode_ethernet_mac_0_ex/tri_mode_ethernet_mac_0_ex.runs/impl_1/tri_mode_ethernet_mac_0_example_design_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 3 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2617.172 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 2df1f93b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2617.172 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2617.172 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-126] Unroutable Placement! A BUFIO can only drive loads in the same IO bank. The following BUFIO clock loads are placed too far from the BUFIO to be routable. 
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/bufio_gmii_rx_clk (BUFIO.O) is locked to BUFIO_X1Y7
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rx_dv_to_mac_reg (FDRE.C) is locked to ILOGIC_X1Y132
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rx_er_to_mac_reg (FDRE.C) is locked to ILOGIC_X1Y129
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rxd_to_mac_reg[0] (FDRE.C) is locked to ILOGIC_X1Y124
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rxd_to_mac_reg[1] (FDRE.C) is locked to ILOGIC_X1Y131
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rxd_to_mac_reg[2] (FDRE.C) is locked to ILOGIC_X1Y134
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rxd_to_mac_reg[3] (FDRE.C) is locked to ILOGIC_X1Y130
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rxd_to_mac_reg[4] (FDRE.C) is locked to ILOGIC_X1Y139
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rxd_to_mac_reg[5] (FDRE.C) is locked to ILOGIC_X1Y133
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rxd_to_mac_reg[6] (FDRE.C) is locked to ILOGIC_X1Y140
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/rxd_to_mac_reg[7] (FDRE.C) is locked to ILOGIC_X1Y147
+
+	The above error could possibly be related to other connected instances. Following is a list of 
+	all the related clock rules and their respective instances.
+
+	Clock Rule: rule_iotile_bufr
+	Status: PASS 
+	Rule Description: An IO driving a BUFR must both be placed in the same clock region
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/gmii_rx_clk_ibuf_i (IBUF.O) is locked to IOB_X1Y78
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/bufr_gmii_rx_clk (BUFR.I) cannot be placed
+
+	Clock Rule: rule_bufh_bufr_ramb
+	Status: PASS 
+	Rule Description: Reginal buffers in the same clock region must drive a total number of brams less
+	than the capacity of the region
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/bufr_gmii_rx_clk (BUFR.O) cannot be placed
+
+WARNING: [Place 30-1161] Could not place all instances for rule!
+	Clock Rule: rule_gclkio_bufg
+	Rule Description: An IOB driving a BUFG must use a CCIO in the same half side (top/bottom) of chip as the BUFG
+
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/clock_inst/mii_tx_clk_ibuf_i (IBUF.O) is locked to IOB_X1Y121
+	trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/clock_inst/BUFGMUX_SPEED_CLK (BUFGCTRL.I1) cannot be placed
+ERROR: [Place 30-68] Instance example_clocks/bufg_clkin1 (BUFGCTRL) is not placed
+ERROR: [Place 30-68] Instance example_clocks/clock_generator/clkout1_buf (BUFGCTRL) is not placed
+ERROR: [Place 30-68] Instance example_clocks/clock_generator/clkout2_buf (BUFGCTRL) is not placed
+ERROR: [Place 30-68] Instance example_clocks/clock_generator/clkout3_buf (BUFGCTRL) is not placed
+ERROR: [Place 30-68] Instance example_clocks/clock_generator/mmcm_adv_inst (MMCME2_ADV) is not placed
+ERROR: [Place 30-68] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/clock_inst/BUFGMUX_SPEED_CLK (BUFGCTRL) is not placed
+ERROR: [Place 30-68] Instance trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/U0/gmii_interface/bufr_gmii_rx_clk (BUFR) is not placed
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a319ee1b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.619 . Memory (MB): peak = 2617.172 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: a319ee1b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.621 . Memory (MB): peak = 2617.172 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: a319ee1b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.623 . Memory (MB): peak = 2617.172 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 62 Warnings, 10 Critical Warnings and 10 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  9 12:59:22 2023...

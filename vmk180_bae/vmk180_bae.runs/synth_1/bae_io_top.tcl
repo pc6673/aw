@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/adx/Desktop/vmk180_bae/vmk180_bae.runs/synth_1/bae_io_top.tcl"
+  variable script "C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.runs/synth_1/bae_io_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,12 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param power.enableLutRouteBelPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param power.xpeLogicHierarchyThreshold 50
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.disableGlitchAnalysis 1
-set_param chipscope.maxJobs 4
 set_param chipscope.flow 0
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcvm1802-vsva2197-2MP-e-S
@@ -84,65 +78,65 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/adx/Desktop/vmk180_bae/vmk180_bae.cache/wt [current_project]
-set_property parent.project_path /home/adx/Desktop/vmk180_bae/vmk180_bae.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.cache/wt [current_project]
+set_property parent.project_path C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:vmk180:part0:3.1 [current_project]
-set_property ip_output_repo /home/adx/Desktop/vmk180_bae/vmk180_bae.cache/ip [current_project]
+set_property ip_output_repo c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem {
-  /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/sources_1/imports/nocattrs.dat
-  /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/common/nsln/nocattrs.dat
+  C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/sources_1/imports/nocattrs.dat
+  C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/common/nsln/nocattrs.dat
 }
 read_verilog -library xil_defaultlib {
-  /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/sources_1/imports/design_1_wrapper.v
-  /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/sources_1/new/bae_io_top.v
+  C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/sources_1/imports/design_1_wrapper.v
+  C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/sources_1/new/bae_io_top.v
 }
-add_files /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_versal_cips_0_0/bd_0/ip/ip_0/bd_70da_pspmc_0_0.xdc]
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_versal_cips_0_0/bd_0/ip/ip_0/pspmc_v1_3/constraints/usr_constraints.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_versal_cips_0_0/bd_0/ip/ip_0/pspmc_v1_3/constraints/usr_constraints.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_versal_cips_0_0/bd_0/bd_70da_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/bd_0/ip/ip_0/xdc/bd_8be5_S00_AXI_nmu_0.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/bd_0/ip/ip_2/xdc/bd_8be5_M00_AXI_nsu_0.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/design_1_axi_noc_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/design_1_axi_noc_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/design_1_axi_noc_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_clk_wizard_0_0/design_1_clk_wizard_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_clk_wizard_0_0/design_1_clk_wizard_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_clk_wizard_0_0/design_1_clk_wizard_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_dbg_hub_0_0/design_1_axi_dbg_hub_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/design_1_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/nsln/design_1.nts]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/nsln/design_1.nts]
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/nsln/design_1.ncr]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/nsln/design_1.ncr]
+add_files C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_versal_cips_0_0/bd_0/ip/ip_0/bd_70da_pspmc_0_0.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_versal_cips_0_0/bd_0/ip/ip_0/pspmc_v1_3/constraints/usr_constraints.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_versal_cips_0_0/bd_0/ip/ip_0/pspmc_v1_3/constraints/usr_constraints.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_versal_cips_0_0/bd_0/bd_70da_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/bd_0/ip/ip_0/xdc/bd_8be5_S00_AXI_nmu_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/bd_0/ip/ip_2/xdc/bd_8be5_M00_AXI_nsu_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/design_1_axi_noc_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/design_1_axi_noc_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_noc_0_0/design_1_axi_noc_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_clk_wizard_0_0/design_1_clk_wizard_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_clk_wizard_0_0/design_1_clk_wizard_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_clk_wizard_0_0/design_1_clk_wizard_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/ip/design_1_axi_dbg_hub_0_0/design_1_axi_dbg_hub_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/nsln/design_1.nts]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/nsln/design_1.nts]
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/nsln/design_1.ncr]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/bd/design_1/nsln/design_1.ncr]
 
-read_ip -quiet /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/sources_1/ip/axis_ila_0/axis_ila_0.xci
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_4/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_4/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_10/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_10/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_11/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_11/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_12/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_12/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_13/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_13/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_14/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_14/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/bd_30f1_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/axis_ila_v1_2/constraints/axis_ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/axis_ila_v1_2/constraints/axis_ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/axis_ila_v1_2/constraints/axis_ila.xdc]
-set_property used_in_implementation false [get_files -all /home/adx/Desktop/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/axis_ila_0_ooc.xdc]
+read_ip -quiet C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/sources_1/ip/axis_ila_0/axis_ila_0.xci
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_4/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_4/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_10/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_10/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_11/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_11/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_12/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_12/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_13/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_13/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_14/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/ip/ip_14/axis_mu_v1_0/constraints/axis_mu_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/bd_0/bd_30f1_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/axis_ila_v1_2/constraints/axis_ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/axis_ila_v1_2/constraints/axis_ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/axis_ila_v1_2/constraints/axis_ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.gen/sources_1/ip/axis_ila_0/axis_ila_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -153,14 +147,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/constrs_2/new/bae_io.xdc
-set_property used_in_implementation false [get_files /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/constrs_2/new/bae_io.xdc]
+read_xdc C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/constrs_2/new/bae_io.xdc
+set_property used_in_implementation false [get_files C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/constrs_2/new/bae_io.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/utils_1/imports/synth_1/bae_io_top.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/utils_1/imports/synth_1/bae_io_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

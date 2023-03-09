@@ -1,0 +1,372 @@
+
+*** Running vivado
+    with args -log gmii_to_rgmii_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gmii_to_rgmii_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source gmii_to_rgmii_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1002.055 ; gain = 117.867
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: gmii_to_rgmii_0
+Command: synth_design -top gmii_to_rgmii_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5492
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx2022p2/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1850.332 ; gain = 406.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'gmii_to_rgmii_0' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0.vhd:127]
+INFO: [Synth 8-3491] module 'gmii_to_rgmii_0_block' declared at 'c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:87' bound to instance 'U0' of component 'gmii_to_rgmii_0_block' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'gmii_to_rgmii_0_block' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:136]
+INFO: [Synth 8-113] binding component instance 'i_bufgmux_gmii_clk_25m_2_5m' to cell 'BUFGMUX' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:211]
+INFO: [Synth 8-113] binding component instance 'i_bufgmux_gmii_clk' to cell 'BUFGMUX' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:219]
+INFO: [Synth 8-113] binding component instance 'rgmii_txc_obuf_i' to cell 'OBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:229]
+INFO: [Synth 8-113] binding component instance 'rgmii_tx_ctl_obuf_i' to cell 'OBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:235]
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:242]
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:242]
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:242]
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:242]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxc_ibuf_i' to cell 'IBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:249]
+INFO: [Synth 8-113] binding component instance 'rgmii_rx_ctl_ibuf_i' to cell 'IBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:255]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:262]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:262]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:262]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:262]
+WARNING: [Synth 8-5640] Port 'idelay_load_in' is missing in component declaration [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:138]
+WARNING: [Synth 8-5640] Port 'idelay_cntvalue_in' is missing in component declaration [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:138]
+WARNING: [Synth 8-5640] Port 'odelay_load_in' is missing in component declaration [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:138]
+WARNING: [Synth 8-5640] Port 'odelay_cntvalue_in' is missing in component declaration [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:138]
+	Parameter C_RGMII_TXC_SKEW_EN bound to: 0 - type: integer 
+	Parameter C_RGMII_TXC_ODELAY_VAL bound to: 0 - type: integer 
+	Parameter C_IDELAY_DELAY_VAL bound to: 5'b00000 
+	Parameter C_ODELAY_DELAY_VAL bound to: 5'b11111 
+	Parameter C_VERSAL_SIM_DEVICE bound to: UNKNOWN_DEVICE - type: string 
+	Parameter C_DEVICE_TYPE bound to: 0 - type: integer 
+	Parameter C_PHYADDR bound to: 5'b01000 
+INFO: [Synth 8-3491] module 'gmii_to_rgmii_v4_1_5' declared at 'c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/hdl/gmii_to_rgmii_v4_1_vhsyn_rfs.vhd:3364' bound to instance 'gmii_to_rgmii_0_core' of component 'gmii_to_rgmii_v4_1_5' [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:270]
+INFO: [Synth 8-256] done synthesizing module 'gmii_to_rgmii_0_block' (0#1) [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_block.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'gmii_to_rgmii_0' (0#1) [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0.vhd:127]
+WARNING: [Synth 8-7129] Port enable in module reset_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port speed_selection[0] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iodelay_clk in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_load in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[4] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[3] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[2] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[1] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[0] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_load in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[4] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[3] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[2] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[1] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[0] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_load_in in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[4] in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[3] in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[2] in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[1] in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[0] in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_load_in in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[4] in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[3] in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[2] in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[1] in module gmii_to_rgmii_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[0] in module gmii_to_rgmii_gen is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1946.633 ; gain = 502.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1946.633 ; gain = 502.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1946.633 ; gain = 502.945
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1946.633 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gmii_to_rgmii_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gmii_to_rgmii_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.runs/gmii_to_rgmii_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.runs/gmii_to_rgmii_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_clocks.xdc] for cell 'U0'
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'gmii_to_rgmii_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_clocks.xdc:7]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_clocks.xdc:20]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_clocks.xdc:21]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_clocks.xdc:24]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_clocks.xdc:32]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_clocks.xdc:33]
+Finished Parsing XDC File [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_clocks.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.gen/sources_1/ip/gmii_to_rgmii_0/synth/gmii_to_rgmii_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gmii_to_rgmii_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gmii_to_rgmii_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2034.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 79 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 2 instances
+  FD => FDRE: 30 instances
+  FDP => FDPE: 42 instances
+  IODELAYE1 => IDELAYE2: 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2035.805 ; gain = 1.570
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx2022p2/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.runs/gmii_to_rgmii_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MDIO_INTERFACE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        idle_or_preamble |                      00000010000 |                             0000
+          wait_for_start |                      00001000000 |                             0001
+                opcode_1 |                      00000001000 |                             0010
+                opcode_2 |                      00000000001 |                             0011
+                ld_phyad |                      00000000010 |                             0100
+                ld_regad |                      00000000100 |                             0101
+                    ta_1 |                      10000000000 |                             0110
+                    ta_2 |                      00010000000 |                             0111
+                  data_1 |                      00100000000 |                             1000
+                  data_2 |                      01000000000 |                             1001
+                  data_3 |                      00000100000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'MDIO_INTERFACE'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 37    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 3     
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port enable in module reset_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_load_in in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[4] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[3] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[2] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[1] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvalue_in[0] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_load_in in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[4] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[3] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[2] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[1] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvalue_in[0] in module gmii_to_rgmii_v4_1_5 is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (reset_sync1) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync2) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync3) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync4) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync5) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync6) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync1) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync2) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync3) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync4) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync5) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync6) is unused and will be removed from module reset_sync__6.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |BUFGMUX   |     2|
+|3     |BUFIO     |     1|
+|4     |IDDR      |     5|
+|5     |IODELAYE1 |     5|
+|6     |LUT2      |    18|
+|7     |LUT3      |    47|
+|8     |LUT4      |    12|
+|9     |LUT5      |    30|
+|10    |LUT6      |    56|
+|11    |MUXF7     |     8|
+|12    |MUXF8     |     4|
+|13    |ODDR      |     6|
+|14    |FD        |    30|
+|15    |FDP       |    30|
+|16    |FDRE      |   141|
+|17    |FDSE      |    24|
+|18    |IBUF      |     6|
+|19    |OBUF      |     6|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2035.805 ; gain = 592.117
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2035.805 ; gain = 502.945
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2035.805 ; gain = 592.117
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2035.805 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2035.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 67 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 2 instances
+  FD => FDRE: 30 instances
+  FDP => FDPE: 30 instances
+  IODELAYE1 => IDELAYE2: 5 instances
+
+Synth Design complete, checksum: 2aa6686a
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2035.805 ; gain = 995.750
+INFO: [Common 17-1381] The checkpoint 'c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.runs/gmii_to_rgmii_0_synth_1/gmii_to_rgmii_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP gmii_to_rgmii_0, cache-ID = 3f086f5e213f9233
+INFO: [Coretcl 2-1174] Renamed 16 cell refs.
+INFO: [Common 17-1381] The checkpoint 'c:/Users/062062/Desktop/trimode_example/xc7z020clg400_example/rgmii_example/gmii_to_rgmii_0_ex/gmii_to_rgmii_0_ex.runs/gmii_to_rgmii_0_synth_1/gmii_to_rgmii_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gmii_to_rgmii_0_utilization_synth.rpt -pb gmii_to_rgmii_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  9 11:11:53 2023...

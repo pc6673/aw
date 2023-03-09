@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/adx/Desktop/vmk180_bae/vmk180_bae.runs/impl_1/bae_io_top.tcl"
+  variable script "C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.runs/impl_1/bae_io_top.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,12 +122,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param power.enableLutRouteBelPower 1
-  set_param power.enableCarry8RouteBelPower 1
-  set_param power.xpeLogicHierarchyThreshold 50
-  set_param power.enableUnconnectedCarry8PinPower 1
-  set_param power.disableGlitchAnalysis 1
-  set_param chipscope.maxJobs 4
+  set_param chipscope.maxJobs 2
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xcvm1802-vsva2197-2MP-e-S
   set_property board_part xilinx.com:vmk180:part0:3.1 [current_project]
@@ -135,21 +130,21 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/adx/Desktop/vmk180_bae/vmk180_bae.cache/wt [current_project]
-  set_property parent.project_path /home/adx/Desktop/vmk180_bae/vmk180_bae.xpr [current_project]
-  set_property ip_output_repo /home/adx/Desktop/vmk180_bae/vmk180_bae.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.cache/wt [current_project]
+  set_property parent.project_path C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.xpr [current_project]
+  set_property ip_output_repo C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/adx/Desktop/vmk180_bae/vmk180_bae.runs/synth_1/bae_io_top.dcp
+  add_files -quiet C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.runs/synth_1/bae_io_top.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/sources_1/bd/design_1/design_1.bd
-  read_ip -quiet /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/sources_1/ip/axis_ila_0/axis_ila_0.xci
+  add_files C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/sources_1/bd/design_1/design_1.bd
+  read_ip -quiet C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/sources_1/ip/axis_ila_0/axis_ila_0.xci
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/adx/Desktop/vmk180_bae/vmk180_bae.srcs/constrs_2/new/bae_io.xdc
+  read_xdc C:/Users/062062/Desktop/test_git/aw/vmk180_bae/vmk180_bae.srcs/constrs_2/new/bae_io.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

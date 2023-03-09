@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date             : Mon Jan 30 18:20:10 2023
-| Host             : adx-pc running 64-bit Ubuntu 22.04.1 LTS
+| Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date             : Fri Feb 24 13:41:45 2023
+| Host             : AUCHL02NB162062 running 64-bit major release  (build 9200)
 | Command          : report_power -file bae_io_top_power_routed.rpt -pb bae_io_top_power_summary_routed.pb -rpx bae_io_top_power_routed.rpx
 | Design           : bae_io_top
 | Device           : xcvm1802-vsva2197-2MP-e-S
@@ -54,12 +54,12 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.012 |        6 |       --- |             --- |
 | Logic                   |     0.002 |     5187 |       --- |             --- |
-|   LUT as Logic          |     0.001 |     1779 |    899840 |            0.20 |
+|   LUT as Logic          |     0.001 |     1778 |    899840 |            0.20 |
 |   CLE FF Register       |    <0.001 |     2629 |   1799680 |            0.15 |
 |   LUT as Shift Register |    <0.001 |       26 |    449920 |           <0.01 |
 |   LOOKAHEAD8            |    <0.001 |       17 |    112480 |            0.02 |
 |   Others                |     0.000 |      143 |       --- |             --- |
-| Signals                 |     0.002 |     4691 |       --- |             --- |
+| Signals                 |     0.002 |     4689 |       --- |             --- |
 | Block RAM               |    <0.001 |      0.5 |       967 |            0.05 |
 | MMCM                    |     0.060 |        0 |       --- |             --- |
 | NoC-DDRMC               |     0.485 |        1 |       --- |             --- |
